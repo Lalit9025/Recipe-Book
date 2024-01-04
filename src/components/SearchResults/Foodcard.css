@@ -2,12 +2,12 @@
     display: flex;
     width: 900px;
     border-radius: 19.447px;
-border: 0.659px solid #151717;
-background-color: rgb(49, 45, 45);
+border: 0.659px solid transparent;
+background-color: #2a2b2c;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 background-blend-mode: overlay, normal;
-backdrop-filter: blur(13.184196472167969px);
 padding: 10px 0px;
-margin: 10px 0px;
+margin: 20px 0px;
 }
 .food_image{
     display: flex;
@@ -30,7 +30,9 @@ margin: 10px 0px;
     overflow:inherit;
     p{
         width: 300px;
-        margin: 5px;
+        margin: 10px 5px;
+        font-weight: 100;
+        font-style: 15px;
     }
 }
 .food_info{
@@ -43,13 +45,7 @@ margin: 10px 0px;
         display: flex;
         flex-direction: column;
         padding: 10px;
-        .ingred_elem{
-            display: flex;
-            flex-wrap: wrap;
-            p{
-                margin: 5px;
-            }
-        }
+        
         
     }
     button{
@@ -58,20 +54,36 @@ margin: 10px 0px;
         background-color: #f22f2f;
         color: white;
         margin: 10px 10px;
+        cursor: pointer;
+    }
+}
+.ingred_elem{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    p{
+        margin: 5px;
+        font-weight: 100;
+        font-size: 15px;
+    }
+}
+.ins_elem{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    p{
+        margin: 5px;
+        font-weight: 100;
+        font-size: 15px;
     }
 }
  .ins{
         display: flex;
         flex-direction: column;
         padding: 10px;
-        .ingred_elem{
-            display: flex;
-            flex-wrap: wrap;
-            p{
-                margin: 5px;
-            }
-
-    }
+}
+.in_head{
+    font-size: 20px;
 }
 .btn{
     display: flex;
@@ -80,7 +92,7 @@ margin: 10px 0px;
 }
 @media screen and (min-width:600px) and (max-width:950px) {
     .food_card{   
-        width: 90vw;     
+        width: 85vw;     
         padding: 10px 0px;
     }
     .food_image{
@@ -110,6 +122,7 @@ margin: 10px 0px;
         align-items: center;
     }
     .food_image{
+        flex-direction: row;
         justify-content: center;
         width: auto;
         padding: 10px;
@@ -128,12 +141,27 @@ margin: 10px 0px;
     }
     .ins{
         font-size: 14px;
+        .ins_elem{
+           p{
+            font-size: 12px;
+           }
+        }
         
     }
     .info{
         
         p{
             width: auto;
+        }
+    }
+    .in_head{
+        text-align: center;
+        font-size: 20px;
+    }
+    .ingred_elem{
+        justify-content: center;
+        p{
+            font-size: 12px;
         }
     }
     

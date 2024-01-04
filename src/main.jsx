@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
  }
  body{
-  background-color: #323334;
+  background-color: #404244;
   color: white;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;

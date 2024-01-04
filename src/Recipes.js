@@ -11,7 +11,7 @@ export const foodData = [
         {name: "Garlic", quantity: "2 cloves"}
       ],
       image: "/images/burger.png",
-      type: "vegetarian",
+      type: "vegan",
       instructions: [
         {i: "Cut the cauliflower into florets and set aside."},
         {i: "Finely chop the onions and garlic."},
@@ -31,7 +31,7 @@ export const foodData = [
         {name: "Olive Oil", quantity: "2 tablespoons"}
       ],
       image: "/images/cake.png",
-      type: "nonveg",
+      type: "vegetarian",
       instructions: [
         {i: "Clean and devein the shrimp, then cut them into bite-sized pieces."},
         {i: "Trim the ends off the broccoli stalks and slice the florets."},
@@ -88,7 +88,7 @@ export const foodData = [
         {name: "Taco Seasoning", quantity: "1 packet"}
       ],
       image: "/images/pancake.png",
-      type: "vegan",
+      type: "nonveg",
       instructions: [
         {i: "Combine the romaine lettuce, ground beef, and taco seasoning in a large bowl."},
         {i: "Mix gently with your hands until the lettuce is coated."},
