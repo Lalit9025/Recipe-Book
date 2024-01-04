@@ -6,7 +6,7 @@ border: 0.659px solid transparent;
 background-color: #2a2b2c;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 background-blend-mode: overlay, normal;
-padding: 10px 0px;
+padding: 10px 10px;
 margin: 20px 0px;
 }
 .food_image{
@@ -116,8 +116,7 @@ margin: 20px 0px;
 }
 @media screen and (max-width:600px){
     .food_card{   
-        width: 90vw;     
-        padding: 10px 0px;
+        width: 330px;     
         flex-direction: column;
         align-items: center;
     }
@@ -125,11 +124,16 @@ margin: 20px 0px;
         flex-direction: row;
         justify-content: center;
         width: auto;
-        padding: 10px;
+        padding: 0px;
         margin: 0;
         gap: 10px;
         img{
             height: 150px;
+        }
+    }
+    .info{
+        h3{
+            font-size: 18px;
         }
     }
     .food_info{
