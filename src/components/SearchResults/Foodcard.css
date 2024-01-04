@@ -1,0 +1,141 @@
+.food_card{
+    display: flex;
+    width: 900px;
+    border-radius: 19.447px;
+border: 0.659px solid #151717;
+background-color: rgb(49, 45, 45);
+background-blend-mode: overlay, normal;
+backdrop-filter: blur(13.184196472167969px);
+padding: 10px 0px;
+margin: 10px 0px;
+}
+.food_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    padding: 10px;
+    img{
+        height: 200px;
+    }
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow:inherit;
+    p{
+        width: 300px;
+        margin: 5px;
+    }
+}
+.food_info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 500px;
+    .indeg{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .ingred_elem{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                margin: 5px;
+            }
+        }
+        
+    }
+    button{
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #f22f2f;
+        color: white;
+        margin: 10px 10px;
+    }
+}
+ .ins{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .ingred_elem{
+            display: flex;
+            flex-wrap: wrap;
+            p{
+                margin: 5px;
+            }
+
+    }
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width:600px) and (max-width:950px) {
+    .food_card{   
+        width: 90vw;     
+        padding: 10px 0px;
+    }
+    .food_image{
+        justify-content: center;
+        width: 300px;
+        padding: 10px;
+        margin: 0;
+        gap: 20px;
+        img{
+            height: 150px;
+        }
+    }
+    .indeg{
+        font-size: 14px;
+    }
+    .ins{
+        font-size: 14px;
+    }
+    
+    
+}
+@media screen and (max-width:600px){
+    .food_card{   
+        width: 90vw;     
+        padding: 10px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .food_image{
+        justify-content: center;
+        width: auto;
+        padding: 10px;
+        margin: 0;
+        gap: 10px;
+        img{
+            height: 150px;
+        }
+    }
+    .food_info{
+        width:auto;
+
+    }
+    .indeg{
+        font-size: 14px;
+    }
+    .ins{
+        font-size: 14px;
+        
+    }
+    .info{
+        
+        p{
+            width: auto;
+        }
+    }
+    
+
+}
